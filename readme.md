@@ -1,22 +1,53 @@
-# FizzBuzz
+# Check EMAIL
 
-- Raccolgo tutti gli elementi dal DOM 
-- Creo una variabile let di appoggio che assegnerò dentro la condizione del cilo, ovvero se è un multiplo di 3 o di 5
-- Creo un ciclo che scriva sul DOM i numeri in sequenza da 1 a 100
-    
-    **SE** è un multoplo di 3:
-    - Richiamo la variabile di appoggio e gli dico che è uguale a Fizz
-    
-    **OPPURE** è un multiplo di 5:
-    - Richiamo la variabile di appoggio e gli dico che è uguale a Buzz
-    
-    **ALTRIMENTI** La variabile di appoggio avrà il valore del numeri restanti, non multipli
-- Creo una varaibile che stampi sul DOM un una stringa HTML contenente le infomrazioni per genrerare un elemento richiamanete dello stile per ogni numero che andrò a stampare al suo interno
-    - Recupero la variabile con i numeri multipli di 3 e 5
-    - Assegno ad esse la condizione che debba stampare seul DOM la stringa FIZZ
-    **SE** multiplo di 3:
-    - Sarà FIZZ
-    **SE** multiplo di 5:
-    - Sarà BUZZ
+- Inventiamo una lista di email a nostro piacimento
+- Chiediamo all'utente una mail (con un prompt)
+- controlliamo che la mail inserita sia presente nella lista
+- se è presente, gli diamo il benvenuto.
+- altrimenti gli diciamo che non può accedere.
 
-    **FINE**
+### Procedimento
+
+- Prendiamo gli elementi dal dom
+    - Prendiamo la stringa proveniente dal input email
+- Creiamo una lista di email dentro un array
+    - creo una costante che abbia come valore la lista
+- Creiamo un ciclo che controlli dentro la nostra lista array se le mail inserita dal utente è già presente
+    
+    **SE** è presente:
+    - Stampo un errore es. "mail giò esistente"
+    
+    **ALTRIMENTI** la aggiungo alla lista
+    - Stampo un messaggio di benvenuto
+
+
+<br>
+<br>
+<br>
+<br>
+
+# Gioco dei Dadi
+
+- Raccolgo gli elementi da DOM
+- Creo un bottone che al click dovrà effettuare du cicli
+    - Fisso la costante aray vuota da appoggio dove salverò i due risultati generati dai cicli
+    - Creo il primo ciclo per l'utente
+        - Fisso la costante alla quale assegnerò il numero generato in modo random da 1 a 6
+        - Pusho il valore della costate nella mia lista aray creata in precedenza
+        - Stampo sul DOM il risultato
+    - Fisso una costante di appoggio vuota dove salverà il numero generato
+    - Creo il ciclo per la CPU
+        - Assefno il numero generato randomicamente alla costante di appoggio
+        - Creo un controllo
+
+        **SE** il numero generato è uguale a quello che sta dentro la mia lista aray 
+            - stampo in console 'Esiste già'
+
+        **ALTRIMENTI** pusho il valore nella lista aray
+    - Stampo nel DOM il valore generato
+    - Creo un controllo:
+
+    **SE** Il numero generato dal utente è maggiore di quello della CPU
+        - Stampo nel 'Hai vinto'
+        
+    **ALTRIMENTI** stampo nel DOM 'ha vinto la cpu'
