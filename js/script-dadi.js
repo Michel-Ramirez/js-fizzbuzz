@@ -35,7 +35,7 @@ buttonDado.addEventListener('click', function(){
         // creo un controllo dentro il ciclo, SE il numero generato esiste già nella lista allora rifai il ciclo
         if (numberList[i] === cpuDado){
             console.log('Esiste già')
-        } else if {
+        } else {
             
             numberList.push(cpuDado);
         }
