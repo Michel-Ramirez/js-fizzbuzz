@@ -30,24 +30,17 @@
 
 - Raccolgo gli elementi da DOM
 - Creo un bottone che al click dovrà effettuare du cicli
-    - Fisso la costante aray vuota da appoggio dove salverò i due risultati generati dai cicli
-    - Creo il primo ciclo per l'utente
-        - Fisso la costante alla quale assegnerò il numero generato in modo random da 1 a 6
-        - Pusho il valore della costate nella mia lista aray creata in precedenza
-        - Stampo sul DOM il risultato
-    - Fisso una costante di appoggio vuota dove salverà il numero generato
-    - Creo il ciclo per la CPU
-        - Assefno il numero generato randomicamente alla costante di appoggio
-        - Creo un controllo
-
-        **SE** il numero generato è uguale a quello che sta dentro la mia lista aray 
-            - stampo in console 'Esiste già'
-
-        **ALTRIMENTI** pusho il valore nella lista aray
-    - Stampo nel DOM il valore generato
-    - Creo un controllo:
+    - Fisso le costanti che avranno come valore il numero generato in modo randomico sia per il user che per la CPU
+    - Creo un controllo per stabilire chi ha vinto
 
     **SE** Il numero generato dal utente è maggiore di quello della CPU
+
         - Stampo nel 'Hai vinto'
         
-    **ALTRIMENTI** stampo nel DOM 'ha vinto la cpu'
+    **SE** Il numero generato è maggiore quello della CPu rispetto a quello dell'utente
+
+        - Stampo 'Ha vinto la CPU'
+    
+    **ALTRIMENTI** Se i valori sono uguali
+    
+        - Stampo 'Pareggio'
